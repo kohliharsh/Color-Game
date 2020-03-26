@@ -41,6 +41,7 @@ easy.addEventListener("click",function(){
     won.textContent = "";
     document.getElementById("container").style.height = "200px";
     scoreKeeper.textContent = "";
+    score = 3;
 })
 
 hard.addEventListener("click",function(){
@@ -60,6 +61,7 @@ hard.addEventListener("click",function(){
     won.textContent = "";
     document.getElementById("container").style.height = "400px";
     scoreKeeper.textContent = "";
+    score = 6;
 })
 
 for(var i = 0 ; i<squares.length ; i++)
@@ -132,6 +134,7 @@ function reset(){
     newGame.textContent = "NEW COLORS";
     won.textContent = "";
     scoreKeeper.textContent = "";
+    score = 6;
 }
 newGame.addEventListener("click",function(){
     reset();
